@@ -11,7 +11,7 @@
     <div class="container h-100 h-full d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col">
-                <h1 class="font-serif text-center"> FAQ - czyli najczęściej zadawane pytania</h1>
+                <h1 class="font-serif text-center "> FAQ - czyli najczęściej zadawane pytania</h1>
             </div>
         </div>
     </div>

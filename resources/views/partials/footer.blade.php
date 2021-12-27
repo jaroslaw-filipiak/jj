@@ -40,3 +40,11 @@
     </div>
 
 </footer>
+
+<style>
+.bg-pattern {
+    background-image: url(<?php echo get_theme_file_uri() ?>/resources/assets/images/pattern.jpg);
+    background-size: 500px;
+    background-attachment: fixed;
+}
+</style>

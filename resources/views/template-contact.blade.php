@@ -35,11 +35,12 @@
     </div>
 </section>
 
-<section class="container-fluid pt-3">
+<section class="container-fluid pt-3 bg-pattern">
 
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <h3 class="font-serif display-6 h1 pt-5 pb-5">Formularz kontaktowy</h3>
                 <?php echo do_shortcode('[contact-form-7 id="61" title="Formularz 1"]') ?>
             </div>
         </div>

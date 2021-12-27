@@ -1,4 +1,4 @@
-<section id="specjalizacje" class="specjalization container-fluid">
+<section id="specjalizacje" class="specjalization container-fluid pt-5">
     <div>
 
         <div class="container">

@@ -105,7 +105,7 @@
     </div>
 </section>
 
-<section class="container-fluid pt-5">
+<section class="container-fluid pt-5 bg-pattern">
     <div class="container pt-5 pb-3">
         <div class="row">
             <div class="col-12 col-lg-6">
@@ -162,7 +162,7 @@
     <div class="container">
         <div class="row pt-5 pb-5">
             <div class="col d-flex align-items-center mb-5">
-                <h3 class="font-serif display-6">FAQ</h3>
+                <h3 class="font-serif display-6 h1">FAQ</h3>
                 <p class="pl-4">Czyli najczęściej zadawane pytania</p>
             </div>
         </div>
