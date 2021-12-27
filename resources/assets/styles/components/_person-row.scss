@@ -1,0 +1,11 @@
+.person-row {
+  padding-bottom: 81%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+
+  @media (min-width: 992px) {
+    padding-bottom: 36%;
+    margin-bottom: 0px;
+  }
+}

@@ -1,0 +1,26 @@
+article.zespol {
+}
+
+.single-zespol {
+  &-title {
+    padding: 100px 0px 250px 0px;
+    background: #f9f9f9;
+  }
+
+  &-content {
+    margin-top: -150px;
+    overflow: hidden;
+  }
+
+  &-entry-images {
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    gap: 10px;
+
+    @include xl {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+}

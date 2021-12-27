@@ -1,0 +1,28 @@
+.wpcf7-form {
+  input,
+  textarea {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px 30px !important;
+    border: none;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  p {
+    margin: 0 !important;
+  }
+
+  .wpcf7-submit {
+    color: #fff;
+    background-color: #404d52;
+    font-family: 'DM Serif Display', serif !important;
+    font-size: 21px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

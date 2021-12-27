@@ -1,0 +1,11 @@
+.cta {
+  background-size: 120%;
+  background-repeat: no-repeat;
+  padding: 10% 0px;
+  background-size: cover;
+  background-position: 100% center;
+
+  @media (min-width: 992px) {
+    background-size: 100%;
+  }
+}

@@ -1,0 +1,123 @@
+.hero {
+  position: relative;
+
+  .slide {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 35%;
+    position: relative;
+  }
+
+  &--title {
+    background-color: #404d52;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    padding: 50px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    a {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+
+      &:hover {
+        &:after {
+          content: '';
+          width: 100%;
+        }
+      }
+
+      &:after {
+        content: '';
+        width: 0%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        display: block;
+      }
+    }
+  }
+
+  .swiper-arrows {
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    z-index: 3;
+  }
+
+  &-faq {
+    height: 63vh;
+    background: #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-single-spec {
+    height: 63vh;
+    background: #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-contact {
+    height: 63vh;
+    background: #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-simple {
+    height: 63vh;
+    background: #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-small {
+    height: 33vh;
+    background: #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.swiper-horizontal > .swiper-scrollbar {
+  position: absolute;
+  left: 1%;
+  bottom: initial;
+  top: -1px;
+  z-index: 50;
+  height: 5px;
+  width: 98%;
+}
+
+.swiper-button-disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.swiper-custom-arrow {
+  width: 100px;
+  height: 100px;
+  background-color: #404d52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.95;
+  }
+}
