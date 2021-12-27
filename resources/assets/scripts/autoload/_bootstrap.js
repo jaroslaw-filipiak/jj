@@ -1,5 +1,6 @@
 import 'bootstrap';
 
+// sticky header
 (() => {
   'use strict';
 
@@ -31,3 +32,20 @@ import 'bootstrap';
 
   window.addEventListener('scroll', handler, false);
 })();
+
+// back to top btn
+
+var btn = $('#button');
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function (e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop: 0}, '300');
+});

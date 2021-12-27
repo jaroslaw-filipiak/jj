@@ -6,12 +6,12 @@
 
 @section('content')
 
-<section class="container-fluid hero-faq"
+<section class="container-fluid hero-faq wow fadeIn fadeInRight"
     style="background-image: url(<?php echo get_theme_file_uri() ?>/resources/assets/images/faq-bg.jpg)">
     <div class="container h-100 h-full d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col">
-                <h1 class="font-serif text-center "> FAQ - czyli najczęściej zadawane pytania</h1>
+                <h1 class="font-serif text-center wow fadeIn fadeInRight"> FAQ - czyli najczęściej zadawane pytania</h1>
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@
 
                     <div class="card mb-2 card-<?php echo $i ?>">
                         <div class="card-header" id="headingTwo-<?php echo $i ?>">
-                            <h2 class="mb-0">
+                            <h2 class="mb-0 wow fadeIn fadeInRight">
                                 <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                                     data-target="#collapseTwo-<?php echo $i ?>" aria-expanded="true"
                                     aria-controls="collapseTwo-<?php echo $i ?>">

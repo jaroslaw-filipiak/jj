@@ -9,7 +9,7 @@
 <section class="container-fluid hero swiper">
     <div class="swiper-wrapper">
         <!-- slide -->
-        <div class="swiper-slide slide"
+        <div class="swiper-slide slide wow fadeIn fadeInRight"
             style="background-image: url(<?php echo get_theme_file_uri() ?>/resources/assets/images/about-bg.jpg)">
             <div class="container border h-100 h-full d-none d-lg-flex">
                 <div class="row">
@@ -28,8 +28,9 @@
     <div class="container pt-5 pb-3">
         <div class="row">
             <div class="col-12">
-                <h1 class="font-serif display-4">O kancelarii</h1>
-                <p>Kancelaria posiada doświadczenie w obsłudze przedsiębiorców. Wykształcenie naszych prawników pozwala
+                <h1 class="font-serif display-4 wow fadeIn fadeInRight">O kancelarii</h1>
+                <p class="wow fadeIn fadeInRight">Kancelaria posiada doświadczenie w obsłudze przedsiębiorców.
+                    Wykształcenie naszych prawników pozwala
                     zapewnić rzetelną obsługę przedsiębiorcom na wielu etapach prowadzonego biznesu.</p>
                 <p>Osobom fizycznym zapewniamy opiekę w zakresie sporów z przedsiębiorcami.
                 </p>
@@ -44,7 +45,7 @@
         <div class="container mt-5 pt-lg-5 mb-5">
             <div class="row mb-5">
                 <div class="col">
-                    <h1 class="font-serif display-4 mb-xl-5 pb-5">Zespół</h1>
+                    <h1 class="font-serif display-4 mb-xl-5 pb-5 wow fadeIn fadeInRight">Zespół</h1>
                 </div>
             </div>
         </div>
@@ -67,7 +68,7 @@ if ( $the_query->have_posts() ) {
 
 
             <!-- item -->
-            <div class="row pt-5 pb-5 d-flex align-items-center justify-content-center">
+            <div class="row pt-5 pb-5 d-flex align-items-center justify-content-center wow fadeIn fadeInRight">
                 <div class="col-12 col-lg-6 person-row"
                     style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>">
                 </div>

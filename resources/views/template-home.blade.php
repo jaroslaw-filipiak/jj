@@ -9,14 +9,14 @@
 <section class="container-fluid hero swiper">
     <div class="swiper-wrapper">
         <!-- slide -->
-        <div class="swiper-slide slide"
+        <div class="swiper-slide slide wow fadeIn fadeInRight"
             style="background-image: url(<?php echo get_theme_file_uri() ?>/resources/assets/images/slider-1.jpg)">
             <div class="container border h-100 h-full d-none d-lg-flex">
                 <div class="row">
-                    <div class="col-10 col-lg-4 hero--title">
+                    <div class="col-10 col-lg-4 hero--title wow fadeIn fadeInRight">
                         <p class="h1 font-serif"> O kancelarii</p>
                         <div>
-                            <a class="btn-underline font-sans"
+                            <a class="btn-underline font-sans wow fadeIn fadeInRight"
                                 href="<?php echo get_home_url('','o-kancelarii') ?>">przejdź do strony</a>
                         </div>
                     </div>
@@ -56,10 +56,10 @@
     </div>
 
     <div class="swiper-arrows d-none d-md-flex">
-        <div class="swiper-custom-arrow swiper-custom-arrow-prev">
+        <div class="swiper-custom-arrow swiper-custom-arrow-prev wow fadeIn fadeInRight">
             <img src="<?php echo get_theme_file_uri() ?>/resources/assets/images/swiper-prev.png" alt="prev button">
         </div>
-        <div class="swiper-custom-arrow swiper-custom-arrow-next">
+        <div class="swiper-custom-arrow swiper-custom-arrow-next wow fadeIn fadeInRight">
             <img src="<?php echo get_theme_file_uri() ?>/resources/assets/images/swiper-next.png" alt="next button">
         </div>
     </div>
@@ -72,7 +72,7 @@
 <section id="about" class="container-fluid">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-lg-9 wow fadeIn fadeInRight ">
                 <h3 class="font-serif">Podmiotom, które nie są zainteresowane toczeniem długotrwałego sporu sądowego
                     oferujemy obsługę w
                     zakresie mediacji cywilnych i gospodarczych.
@@ -84,18 +84,20 @@
     </div>
 </section>
 
-<section class="container-fluid">
+<section class="container-fluid ">
     <div>
         <div class="row">
             <div class="d-none d-lg-block col-lg-1"></div>
-            <div class="col-12 col-lg-11 feature-box text-white">
-                <h4 class="font-sans h5">
+            <div class="col-12 col-lg-11 feature-box text-white ">
+                <h4 class="font-sans h5 wow fadeIn fadeInRight ">
                     Naszych klientów wspieramy również w obsłudze w zakresie ochrony danych osobowych. Tworzymy
                     polityki, regulaminy, umowy powierzenia przetwarzania danych osobowych, analizy ryzyka i obsługę
                     przed Prezesem Urzędu Ochrony Danych Osobowych. Zapewniamy obsługę w postaci outsorcingu Inspektora
                     Ochrony Danych Osobowych.
                 </h4>
-                <p>Przedsiębiorców obsługujemy w zakresie prawa zamówień publicznych. Jesteśmy nastawieni na kompleksową
+                <p class="wow fadeIn fadeInRight">Przedsiębiorców obsługujemy w zakresie prawa zamówień publicznych.
+                    Jesteśmy
+                    nastawieni na kompleksową
                     obsługę w zakresie przetargów, tj. składanie ofert przetargowych, odpowiedzi na wezwania
                     zamawiających, wyjaśnienia dot. rażąco niskiej ceny, wnoszenie odwołań do Prezesa Urzędu Zamówień
                     Publicznych.
@@ -108,11 +110,14 @@
 <section class="container-fluid pt-5 bg-pattern">
     <div class="container pt-4 pb-3">
         <div class="row">
-            <div class="col-12 col-lg-6 pb-lg-4">
-                <h1 class="font-serif display-6">O kancelarii</h1>
-                <p>Kancelaria posiada doświadczenie w obsłudze przedsiębiorców. Wykształcenie naszych prawników pozwala
+            <div class="col-12 col-lg-6 pb-lg-4 ">
+                <h1 class="font-serif display-6 wow fadeIn fadeInRight">O kancelarii</h1>
+                <p class="wow fadeIn fadeInRight">Kancelaria posiada doświadczenie w obsłudze przedsiębiorców.
+                    Wykształcenie naszych
+                    prawników pozwala
                     zapewnić rzetelną obsługę przedsiębiorcom na wielu etapach prowadzonego biznesu.</p>
-                <p>Osobom fizycznym zapewniamy opiekę w zakresie sporów z przedsiębiorcami.
+                <p class="wow fadeIn fadeInRight">Osobom fizycznym zapewniamy opiekę w zakresie sporów z
+                    przedsiębiorcami.
                 </p>
             </div>
         </div>
@@ -133,13 +138,14 @@
 
 
         <div class="home-zespol--single row pb-5 d-flex align-items-center justify-content-center">
-            <div class="col-12 col-lg-6 person-row"
+            <div class="col-12 col-lg-6 person-row wow fadeIn fadeInRight"
                 style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>">
             </div>
             <div class="col-12 col-lg-5 pl-lg-5 pr-lg-5 ">
-                <h3 class="font-serif pr-lg-5">@php echo get_the_title() @endphp </h3>
-                <p> @php echo get_the_excerpt() @endphp </p>
-                <a class="btn btn-dark btn-rounded" href="<?php echo get_the_permalink() ?>">Więcej</a>
+                <h3 class="font-serif pr-lg-5 wow fadeIn fadeInRight">@php echo get_the_title() @endphp </h3>
+                <p class="wow fadeIn fadeInRight"> @php echo get_the_excerpt() @endphp </p>
+                <a class="btn btn-dark btn-rounded wow fadeIn fadeInRight"
+                    href="<?php echo get_the_permalink() ?>">Więcej</a>
             </div>
         </div>
 
@@ -162,8 +168,8 @@
     <div class="container">
         <div class="row pt-5 pb-5">
             <div class="col d-flex align-items-center mb-5">
-                <h3 class="font-serif display-6 h1">FAQ</h3>
-                <p class="pl-4">Czyli najczęściej zadawane pytania</p>
+                <h3 class="font-serif display-6 h1 wow fadeIn fadeInRight">FAQ</h3>
+                <p class="pl-4 wow fadeIn fadeInRight">Czyli najczęściej zadawane pytania</p>
             </div>
         </div>
     </div>
@@ -195,7 +201,7 @@
 
                     <div class="card card-<?php echo $i ?>">
                         <div class="card-header" id="headingOne-<?php echo $i ?>">
-                            <h2 class="mb-0">
+                            <h2 class="mb-0 wow fadeIn fadeInRight">
                                 <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                                     data-target="#collapseOne-<?php echo $i ?>" aria-expanded="true"
                                     aria-controls="collapseOne-<?php echo $i ?>">
@@ -251,7 +257,7 @@
 
                     <div class="card card-<?php echo $i ?>">
                         <div class="card-header" id="headingTwo-<?php echo $i ?>">
-                            <h2 class="mb-0">
+                            <h2 class="mb-0 wow fadeIn fadeInRight">
                                 <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                                     data-target="#collapseTwo-<?php echo $i ?>" aria-expanded="true"
                                     aria-controls="collapseTwo-<?php echo $i ?>">
@@ -287,7 +293,7 @@
     </div>
     <div class="container mx-auto pb-5">
         <div class="row d-flex justify-content-center">
-            <div class="mx-auto text-center"> <a class="btn-underline btn-more-faq"
+            <div class="mx-auto text-center"> <a class="btn-underline btn-more-faq wow fadeIn fadeInRight"
                     href="<?php echo get_home_url('','faq-czeste-pytania') ?>">Zobacz wszystkie
                     najczęściej zadawane
                     pytania

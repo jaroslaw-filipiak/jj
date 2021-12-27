@@ -4,14 +4,14 @@
 
     <div class="container pt-5 pb-1">
         <div class="row d-flex align-items-center">
-            <div class="col-12 col-lg-6 d-flex align-items-center pb-5">
+            <div class="col-12 col-lg-6 d-flex align-items-center pb-5 wow fadeIn fadeInRight">
                 <!-- footer col 1 -->
                 <img src="<?php echo get_theme_file_uri() ?>/resources/assets/images/logo-white-footer.png"
                     alt="logo footer">
                 <h6 class="text-white font-serif">Kancelaria wspierająca przedsiębiorczość</h6>
                 <!-- footer col 1 -->
             </div>
-            <div class="col-12 col-lg-6 d-flex align-items-center text-white pb-5"
+            <div class="col-12 col-lg-6 d-flex align-items-center text-white pb-5 wow fadeIn fadeInRight"
                 style="border-bottom: 1px solid white;">
                 <!-- footer col 2 -->
                 <p>Kancelaria Jędruchniewicz & Jędruchniewicz <br>
@@ -40,6 +40,22 @@
     </div>
 
 </footer>
+
+<!-- Back to top button -->
+<a id="button">
+    <img src="<?php echo get_theme_file_uri() ?>/resources/assets/images/swiper-next.png" alt="back to top button">
+</a>
+
+
+<script>
+new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 45,
+    mobile: false,
+    live: true
+}).init();
+</script>
 
 <style>
 .bg-pattern {

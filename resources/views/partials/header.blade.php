@@ -1,6 +1,6 @@
 <header class="banner banner-wrapper">
     <div class="banner container d-flex align-items-center justify-content-between">
-        <a class="brand" style="transform: scale(.97)" href="{{ home_url('/') }}">
+        <a class="brand wow fadeIn fadeInRight" style="transform: scale(.97)" href="{{ home_url('/') }}">
             <svg width="112" height="112" viewBox="0 0 159 159" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M119.25 119.25C141.203 97.2967 141.203 61.7033 119.25 39.75C97.2967 17.7967 61.7033 17.7967 39.75 39.75C17.7967 61.7033 17.7967 97.2967 39.75 119.25C61.7033 141.203 97.2967 141.203 119.25 119.25Z"
@@ -15,7 +15,7 @@
             </svg>
 
         </a>
-        <nav class="nav-primary">
+        <nav class="nav-primary wow fadeIn fadeInRight">
             @if (has_nav_menu('primary_navigation'))
             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav' , 'menu_id' => 'menu']) !!}
             @endif

@@ -11,3 +11,50 @@
 .btn-rounded {
   border-radius: 60px;
 }
+
+// .callendy-link {
+//   padding: 7px 30px;
+//   background-color: #353f3e;
+//   font-size: 16px;
+//   border-radius: 60px;
+//   a {
+//     color: #fff;
+//   }
+// }
+
+#button {
+  display: inline-block;
+  background-color: #404d52;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 30px;
+    transform: rotate(-90deg);
+  }
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
