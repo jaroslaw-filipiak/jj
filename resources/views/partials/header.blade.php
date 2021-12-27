@@ -1,5 +1,5 @@
-<header class="banner">
-    <div class="container d-flex align-items-center justify-content-between">
+<header class="banner banner-wrapper">
+    <div class="banner container d-flex align-items-center justify-content-between">
         <a class="brand" style="transform: scale(.97)" href="{{ home_url('/') }}">
             <svg width="112" height="112" viewBox="0 0 159 159" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

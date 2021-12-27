@@ -28,6 +28,14 @@ body {
   font-family: 'DM Serif Display', serif !important;
 }
 
+.animateIn {
+  transform: translateY(0px);
+}
+
+.animateOut {
+  transform: translateY(-100%);
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

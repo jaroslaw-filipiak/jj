@@ -5,3 +5,52 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.banner-wrapper {
+  z-index: 4;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(255, 255, 255, 1);
+  @include lg {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 112px;
+  }
+}
+
+.is-sticky {
+  @include lg {
+    top: 50px;
+    height: 70px;
+  }
+
+  .brand {
+    @include lg {
+      transition: all 300ms ease-in-out;
+      position: relative;
+      top: -11px;
+    }
+
+    svg {
+      @include lg {
+        transition: all 300ms ease-in-out;
+        transform: scale(0.6);
+      }
+    }
+  }
+}
+
+.brand {
+  @include lg {
+    transition: all 300ms ease-in-out;
+    position: relative;
+    top: 0px;
+  }
+
+  svg {
+    @include lg {
+      transition: all 300ms ease-in-out;
+      transform: scale(1);
+    }
+  }
+}
