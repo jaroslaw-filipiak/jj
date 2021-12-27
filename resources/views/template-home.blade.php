@@ -106,9 +106,9 @@
 </section>
 
 <section class="container-fluid pt-5 bg-pattern">
-    <div class="container pt-5 pb-3">
+    <div class="container pt-4 pb-3">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 pb-lg-4">
                 <h1 class="font-serif display-6">O kancelarii</h1>
                 <p>Kancelaria posiada doświadczenie w obsłudze przedsiębiorców. Wykształcenie naszych prawników pozwala
                     zapewnić rzetelną obsługę przedsiębiorcom na wielu etapach prowadzonego biznesu.</p>
@@ -136,9 +136,9 @@
             <div class="col-12 col-lg-6 person-row"
                 style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>">
             </div>
-            <div class="col-12 col-lg-6 pl-lg-5 pr-lg-5 ">
-                <h3 class="font-serif">@php echo get_the_title() @endphp </h3>
-                <p class="pr-lg-5"> @php echo get_the_excerpt() @endphp </p>
+            <div class="col-12 col-lg-5 pl-lg-5 pr-lg-5 ">
+                <h3 class="font-serif pr-lg-5">@php echo get_the_title() @endphp </h3>
+                <p> @php echo get_the_excerpt() @endphp </p>
                 <a class="btn btn-dark btn-rounded" href="<?php echo get_the_permalink() ?>">Więcej</a>
             </div>
         </div>
