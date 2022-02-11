@@ -14,7 +14,7 @@
     position: absolute;
     bottom: 0px;
     left: 20px;
-    padding: 50px 30px;
+    padding: 25px 25px;
 
     display: flex;
     flex-direction: column;
@@ -50,16 +50,20 @@
   }
 
   .swiper-arrows {
-    width: 210px;
+    width: 106px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
+    gap: 3px;
 
     position: absolute;
-    bottom: 0px;
+    bottom: 22px;
     right: 20px;
     z-index: 3;
+
+    @include xl {
+      bottom: 45px;
+    }
   }
 
   &-faq {
@@ -67,12 +71,24 @@
     background: #f9f9f9;
     background-repeat: no-repeat;
     background-size: cover;
+
+    h1 {
+      @include lg {
+        margin-top: 112px;
+      }
+    }
   }
   &-single-spec {
     height: 63vh;
     background: #f9f9f9;
     background-repeat: no-repeat;
     background-size: cover;
+
+    h1 {
+      @include lg {
+        margin-top: 112px;
+      }
+    }
   }
   &-contact {
     height: 63vh;
@@ -110,8 +126,8 @@
 }
 
 .swiper-custom-arrow {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #404d52;
   display: flex;
   align-items: center;

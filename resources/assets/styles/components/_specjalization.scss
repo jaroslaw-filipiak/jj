@@ -1,40 +1,116 @@
 .specjalization {
-  .spec-item {
-    transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
-    color: #fff;
-    background-color: #353f3e;
-    padding: 40px 30px;
-    margin: 10px;
-    position: relative;
+  overflow: hidden;
 
-    &--wrapper {
+  .spec-item--layout-1 {
+    .spec-item {
+      transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+      color: #fff;
+      background-color: #353f3e;
+      padding: 40px 30px;
+      margin: 10px;
+      position: relative;
+
+      &--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &--title {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      &:hover {
+        transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+        .spec-item--bg {
+          opacity: 0.5;
+          transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+        }
+      }
+
+      &--bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0;
+        transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+      }
+    }
+  }
+
+  .spec-item--layout-2 {
+    @include mobile {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+
+    @include xl {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    gap: 1px;
+    transition: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    .spec-item {
+      transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+      color: #fff;
+      background-color: #353f3e;
+      padding: 40px 30px;
+      position: relative;
+
+      @include mobile {
+        width: 100%;
+      }
+
+      &:hover {
+        transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+        background-color: #2a3131;
+        .spec-item--bg {
+          opacity: 0.5;
+          transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+        }
+
+        .spec-item--link {
+          opacity: 1;
+          a {
+            opacity: 1;
+          }
+        }
+
+        a {
+          opacity: 1;
+        }
+      }
+
+      &--bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0;
+        transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+      }
+
+      &--link {
+        background: #3e4747;
+        padding: 10px 30px;
+        opacity: 0;
+      }
     }
 
     &--title {
       font-size: 24px;
       font-weight: 500;
-    }
-
-    &:hover {
-      transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
-      .spec-item--bg {
-        opacity: 0.5;
-        transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
-      }
-    }
-
-    &--bg {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      opacity: 0;
-      transform: all 3s cubic-bezier(0.39, 0.575, 0.565, 1);
     }
 
     img {
@@ -43,11 +119,30 @@
 
     a {
       color: #fff;
-      display: inline;
+      display: flex;
+      align-items: center;
       position: relative;
+      opacity: 1;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         text-decoration: none;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 100%;
+          background-color: #fff;
+          height: 1px;
+          opacity: 1;
+        }
       }
 
       &:after {
@@ -56,9 +151,10 @@
         position: absolute;
         bottom: -10px;
         left: 0;
-        width: 100%;
+        width: 0%;
         background-color: #fff;
         height: 1px;
+        opacity: 0;
       }
     }
   }

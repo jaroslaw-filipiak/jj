@@ -10,7 +10,7 @@
     <div class="swiper-wrapper">
         <!-- slide -->
         <div class="swiper-slide slide wow fadeIn fadeInRight"
-            style="background-image: url(<?php echo get_theme_file_uri() ?>/resources/assets/images/contact-bg.jpg)">
+            style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
             <div class="container h-100 h-full d-none d-lg-flex">
                 <div class="row">
                     <div class="col-10 col-lg-4 hero--title">

@@ -5,20 +5,11 @@
     <div class="container pt-5 pb-1">
         <div class="row d-flex align-items-center">
             <div class="col-12 col-lg-6 d-flex align-items-center pb-5 wow fadeIn fadeInRight">
-                <!-- footer col 1 -->
-                <img src="<?php echo get_theme_file_uri() ?>/resources/assets/images/logo-white-footer.png"
-                    alt="logo footer">
-                <h6 class="text-white font-serif">Kancelaria wspierająca przedsiębiorczość</h6>
-                <!-- footer col 1 -->
+                @php dynamic_sidebar('sidebar-footer-1') @endphp
             </div>
             <div class="col-12 col-lg-6 d-flex align-items-center text-white pb-5 wow fadeIn fadeInRight"
                 style="border-bottom: 1px solid white;">
-                <!-- footer col 2 -->
-                <p>Kancelaria Jędruchniewicz & Jędruchniewicz <br>
-                    ul. Stryjeńskich 13c lok. 94<br>
-                    02-791 Warszawa
-                </p>
-                <!-- footer col 2 -->
+                @php dynamic_sidebar('sidebar-footer-2') @endphp
             </div>
         </div>
     </div>
@@ -32,8 +23,21 @@
             </div>
             <!-- footer col 3 -->
             <div class="col-12 col-lg-6 d-flex flex-wrap align-items-center text-white">
-                <p class="pr-3">Mail: kancelaria@jedruchniewicz.com</p>
-                <p>Tel. 508-786-242</p>
+                @php dynamic_sidebar('sidebar-footer-3') @endphp
+                <ul class="social-media-icons">
+                    <?php if( have_rows('sm_icons_repeater', 'option') ): ?>
+
+                    <?php while( have_rows('sm_icons_repeater', 'option') ): the_row(); 
+                            $class = get_sub_field('icon_class', 'option');
+                            $url = get_sub_field('icon_url', 'option');
+                        ?>
+
+                    <li><a href="<?php echo $url ?>"> <i class="<?php echo $class ?>"></i></a></li>
+
+                    <?php endwhile; ?>
+                </ul>
+                <?php endif; ?>
+
             </div>
             <!-- footer col 3 -->
         </div>
@@ -61,6 +65,6 @@ new WOW({
 .bg-pattern {
     background-image: url(<?php echo get_theme_file_uri() ?>/resources/assets/images/pattern.jpg);
     background-size: 500px;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 </style>

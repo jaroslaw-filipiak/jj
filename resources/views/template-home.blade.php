@@ -8,51 +8,37 @@
 
 <section class="container-fluid hero swiper">
     <div class="swiper-wrapper">
+
+        <?php if( have_rows('home_slider') ): ?>
+
+        <?php while( have_rows('home_slider') ): the_row(); 
+
+            $image = get_sub_field('home_slider_bg');
+            $title = get_sub_field('home_slider_title');
+            $link = get_sub_field('home_slider_link');
+            
+        ?>
+
         <!-- slide -->
-        <div class="swiper-slide slide wow fadeIn fadeInRight"
-            style="background-image: url(<?php echo get_theme_file_uri() ?>/resources/assets/images/slider-1.jpg)">
+        <div class="swiper-slide slide" style="background-image: url(<?php echo $image ?>)">
             <div class="container border h-100 h-full d-none d-lg-flex">
                 <div class="row">
                     <div class="col-10 col-lg-4 hero--title wow fadeIn fadeInRight">
-                        <p class="h1 font-serif"> O kancelarii</p>
+                        <p class="h1 font-serif"><?php echo $title ?></p>
                         <div>
                             <a class="btn-underline font-sans wow fadeIn fadeInRight"
-                                href="<?php echo get_home_url('','o-kancelarii') ?>">przejdź do strony</a>
+                                href="<?php echo $link['url'] ?>"><?php echo $link['title'] ?></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- slide 2 -->
-        <div class="swiper-slide slide"
-            style="background-image: url(<?php echo get_theme_file_uri() ?>/resources/assets/images/faq-bg.jpg)">
-            <div class="container border h-100 h-full d-none d-lg-flex">
-                <div class="row">
-                    <div class="col-10 col-lg-4 hero--title">
-                        <p class="h1 font-serif">FAQ</p>
-                        <div>
-                            <a class="btn-underline font-sans" href="<?php echo get_home_url('','faq') ?>">przejdź do
-                                strony</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- slide 3 -->
-        <div class="swiper-slide slide"
-            style="background-image: url(<?php echo get_theme_file_uri() ?>/resources/assets/images/contact-bg.jpg)">
-            <div class="container border h-100 h-full d-none d-lg-flex">
-                <div class="row">
-                    <div class="col-10 col-lg-4 hero--title">
-                        <p class="h1 font-serif">Kontakt</p>
-                        <div>
-                            <a class="btn-underline font-sans" href="<?php echo get_home_url('','kontakt') ?>">przejdź
-                                do strony</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- END slide -->
+
+        <?php endwhile; ?>
+
+        <?php endif; ?>
+
     </div>
 
     <div class="swiper-arrows d-none d-md-flex">
@@ -70,12 +56,28 @@
 </section>
 
 <section id="about" class="container-fluid">
+
+    <div class="sign-wrapper">
+        <div id="sign">
+            <img data-depth="0.3" src="<?php echo get_theme_file_uri() ?>/resources/assets/images/sign/j.png" alt="">
+            <img data-depth="0.3" src="<?php echo get_theme_file_uri() ?>/resources/assets/images/sign/circle.png"
+                alt="">
+            <img data-depth="0.5" src="<?php echo get_theme_file_uri() ?>/resources/assets/images/sign/m.png" alt="">
+            <img data-depth="0.4" src="<?php echo get_theme_file_uri() ?>/resources/assets/images/sign/line.png" alt="">
+        </div>
+    </div>
+
+    <script>
+    var scene = document.getElementById('sign');
+    var parallaxInstance = new Parallax(scene);
+    </script>
+
     <div class="container">
+
         <div class="row">
             <div class="col-12 col-lg-9 wow fadeIn fadeInRight ">
                 <h3 class="font-serif">Podmiotom, które nie są zainteresowane toczeniem długotrwałego sporu sądowego
-                    oferujemy obsługę w
-                    zakresie mediacji cywilnych i gospodarczych.
+                    oferujemy obsługę w zakresie mediacji cywilnych i gospodarczych.
                 </h3>
                 <p>Zapewniamy poufność i otwartość na wszelkie <br>potrzeby naszych klientów.
                 </p>

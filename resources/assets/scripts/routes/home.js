@@ -1,6 +1,9 @@
 export default {
   init() {
     const swiper = new Swiper('.hero', {
+      autoplay: {
+        delay: 3500,
+      },
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
