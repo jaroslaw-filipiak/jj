@@ -23,4 +23,19 @@
     <!-- font awesome -->
 
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <style>
+    body {
+        <?php echo get_field('body_default_font', 'option') ?>
+    }
+
+    .font-sans {
+        <?php echo get_field('font_sans', 'option') ?>
+    }
+
+    .font-serif {
+        <?php echo get_field('font_serif', 'option') ?>
+    }
+    </style>
+
 </head>

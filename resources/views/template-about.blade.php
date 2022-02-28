@@ -14,7 +14,7 @@
             <div class="container border h-100 h-full d-none d-lg-flex">
                 <div class="row">
                     <div class="col-10 col-lg-4 hero--title">
-                        <p class="h1 font-serif">@php echo get_the_title() @endphp</p>
+                        @include('partials.title')
                     </div>
                 </div>
             </div>

@@ -76,11 +76,12 @@
 
         <div class="row">
             <div class="col-12 col-lg-9 wow fadeIn fadeInRight ">
-                <h3 class="font-serif">Podmiotom, które nie są zainteresowane toczeniem długotrwałego sporu sądowego
+                <?php echo get_field('home_main') ?>
+                <!-- <h3 class="font-serif">Podmiotom, które nie są zainteresowane toczeniem długotrwałego sporu sądowego
                     oferujemy obsługę w zakresie mediacji cywilnych i gospodarczych.
                 </h3>
                 <p>Zapewniamy poufność i otwartość na wszelkie <br>potrzeby naszych klientów.
-                </p>
+                </p> -->
             </div>
         </div>
     </div>
@@ -91,7 +92,8 @@
         <div class="row">
             <div class="d-none d-lg-block col-lg-1"></div>
             <div class="col-12 col-lg-11 feature-box text-white ">
-                <h4 class="font-sans h5 wow fadeIn fadeInRight ">
+                <?php echo get_field('home_1') ?>
+                <!-- <h4 class="font-sans h5 wow fadeIn fadeInRight ">
                     Naszych klientów wspieramy również w obsłudze w zakresie ochrony danych osobowych. Tworzymy
                     polityki, regulaminy, umowy powierzenia przetwarzania danych osobowych, analizy ryzyka i obsługę
                     przed Prezesem Urzędu Ochrony Danych Osobowych. Zapewniamy obsługę w postaci outsorcingu Inspektora
@@ -103,7 +105,7 @@
                     obsługę w zakresie przetargów, tj. składanie ofert przetargowych, odpowiedzi na wezwania
                     zamawiających, wyjaśnienia dot. rażąco niskiej ceny, wnoszenie odwołań do Prezesa Urzędu Zamówień
                     Publicznych.
-                </p>
+                </p> -->
             </div>
         </div>
     </div>
@@ -112,15 +114,19 @@
 <section class="container-fluid pt-5 bg-pattern">
     <div class="container pt-4 pb-3">
         <div class="row">
+            <div class="col-12">
+                <?php echo get_field('home_2') ?>
+            </div>
             <div class="col-12 col-lg-6 pb-lg-4 ">
-                <h1 class="font-serif display-6 wow fadeIn fadeInRight">O kancelarii</h1>
+                <!-- <?php //echo get_field('home_2') ?> -->
+                <!-- <h1 class="font-serif display-6 wow fadeIn fadeInRight">O kancelarii</h1>
                 <p class="wow fadeIn fadeInRight">Kancelaria posiada doświadczenie w obsłudze przedsiębiorców.
                     Wykształcenie naszych
                     prawników pozwala
                     zapewnić rzetelną obsługę przedsiębiorcom na wielu etapach prowadzonego biznesu.</p>
                 <p class="wow fadeIn fadeInRight">Osobom fizycznym zapewniamy opiekę w zakresie sporów z
                     przedsiębiorcami.
-                </p>
+                </p> -->
             </div>
         </div>
     </div>

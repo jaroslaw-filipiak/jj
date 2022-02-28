@@ -28,8 +28,11 @@ if ( $query->have_posts() ) {
     <div class="spec-item--bg" style="background-image: url(<?php echo $bg ? $bg : $bgPlaceholder ?>)">
     </div>
     <div class="d-flex align-items-center pr-5 position-relative">
-        <img class="img-fluid position-relative" src="<?php echo $icon ? $icon : $iconPlaceholder ?>"
+
+        <img class="mg-fluid position-relative" src="<?php echo $icon ? $icon : $iconPlaceholder ?>"
             alt="<?php echo get_the_title() ?>-icon">
+
+
         <div class="spec-item--title pl-3 position-relative">
             <?php echo get_the_title() ?>
         </div>

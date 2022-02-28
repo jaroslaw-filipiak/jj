@@ -12,16 +12,24 @@
     <div class="container h-100 h-full d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col">
-                <h1 class="font-serif text-center wow fadeIn fadeInRight"> <?php echo get_the_title() ?></h1>
+                @include('partials.title')
             </div>
         </div>
     </div>
 </section>
 
-<section id="specjalizacje" class="wow fadeIn fadeInRight specjalization container-fluid pt-5"
-    style="margin-top: 100px;">
-    <div>
+<section>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col">
+                <?php echo the_content() ?>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section id="specjalizacje" class="wow fadeIn fadeInRight specjalization container-fluid pt-5">
+    <div>
         <div class="spec-item--layout-2">
             @include('partials.spec-items-loop')
         </div>

@@ -14,7 +14,7 @@
             <div class="container h-100 h-full d-none d-lg-flex">
                 <div class="row">
                     <div class="col-10 col-lg-4 hero--title">
-                        <p class="h1 font-serif">Kontakt</p>
+                        <h1 class="h1 font-serif text-center wow fadeIn fadeInRight"> @include('partials.title')</h1>
                     </div>
                 </div>
             </div>
