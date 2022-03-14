@@ -7,6 +7,10 @@
     border: none;
   }
 
+  input[type="checkbox"] {
+    width: auto;
+  }
+
   label {
     width: 100%;
   }
@@ -15,7 +19,13 @@
     margin: 0 !important;
   }
 
+  a {
+    color: #404d52;
+    text-decoration: underline;
+  }
+
   .wpcf7-submit {
+    margin-top: 30px;
     color: #fff;
     background-color: #404d52;
     font-family: 'DM Serif Display', serif !important;

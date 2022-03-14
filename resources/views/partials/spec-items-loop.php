@@ -1,6 +1,7 @@
 <?php
 
 
+
 // WP_Query arguments
 $args = array(
     'post_type'              => array( 'specjalizacje' ),
@@ -16,6 +17,7 @@ if ( $query->have_posts() ) {
 
         $icon = get_field('spec_icon');
         $bg = get_field('spec_bg');
+        $center = get_field('center_title');
 
         $themeFileURI = get_theme_file_uri();
         $iconPlaceholder = "{$themeFileURI}/resources/assets/images/spec-icon.png";
@@ -27,7 +29,7 @@ if ( $query->have_posts() ) {
 <div class="spec-item spec-item-<?php echo get_the_ID() ?>">
     <div class="spec-item--bg" style="background-image: url(<?php echo $bg ? $bg : $bgPlaceholder ?>)">
     </div>
-    <div class="d-flex align-items-center pr-5 position-relative">
+    <div class="d-flex align-items-center pr-5 position-relative <?php echo $center ? 'justify-content-center' : '' ?>">
 
         <img class="mg-fluid position-relative" src="<?php echo $icon ? $icon : $iconPlaceholder ?>"
             alt="<?php echo get_the_title() ?>-icon">

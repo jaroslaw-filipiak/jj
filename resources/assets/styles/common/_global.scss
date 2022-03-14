@@ -163,3 +163,14 @@ nav.nav-primary {
     }
   }
 }
+
+
+
+body.page {
+  .content {
+    @media (min-width: 992px) {
+      padding-top: 112px;
+    }
+   
+  }
+}

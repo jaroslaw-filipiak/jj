@@ -4,6 +4,7 @@
   padding: 10% 0px;
   background-size: cover;
   background-position: 100% center;
+  position: relative;
 
   @media (min-width: 992px) {
     background-size: 100%;
@@ -12,4 +13,16 @@
   a {
     color: #fff;
   }
+
+  &--overlay {
+    opacity: .85;
+
+    @media (min-width: 992px) {
+      opacity: 0;
+    }
+
+  }
+
+
 }
+ 

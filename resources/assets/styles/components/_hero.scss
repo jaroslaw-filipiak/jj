@@ -103,10 +103,16 @@
     background-size: cover;
   }
   &-small {
+    
     height: 33vh;
     background: #f9f9f9;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include lg {
+      margin-top: 112px;
+      
+    }
   }
 }
 

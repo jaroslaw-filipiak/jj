@@ -286,4 +286,40 @@ if( function_exists('acf_add_options_page') ) {
 	
 	
 }
+
+function change_mce_options($settings) {
+
+	$new_formats = array(
+				'aligncenter' => array(
+					'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img',
+					'classes' => 'textcenter',
+			)
+		);
+	
+	$settings['formats'] = json_encode($new_formats);
+	
+	return $settings;
+	
+	}
+	add_filter('tiny_mce_before_init', 'change_mce_options');
+
+
+
+
+
+
+
+	add_filter('site_transient_update_plugins', 'my_remove_update_nag');
+	function my_remove_update_nag($value) {
+	 unset($value->response[ 'advanced-custom-fields-pro/acf.php' ]);
+	 return $value;
+	}
+
+
+
+
+
+
   ?>
+
+  

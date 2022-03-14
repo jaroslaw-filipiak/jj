@@ -12,6 +12,8 @@
     </div>
 </section>
 
+<?php the_content() ?>
+
 <div class="container mt-5 mb-5">
     @while(have_posts()) @php the_post() @endphp
     @include('partials.content-page')
