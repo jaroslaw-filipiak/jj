@@ -32,8 +32,6 @@ if ($query->have_posts()) {
             </div>
             <div class="d-flex align-items-center pr-5 position-relative <?php echo $center ? 'justify-content-center' : '' ?>">
 
-                <h1><?php echo get_the_title() ?></h1>
-
                 <img class="mg-fluid position-relative" src="<?php echo $icon ? $icon : $iconPlaceholder ?>" alt="<?php echo get_the_title() ?>-icon">
 
 
