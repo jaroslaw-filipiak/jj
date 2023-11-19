@@ -67,16 +67,9 @@
   }
 
   &-faq {
-    height: 63vh;
     background: #f9f9f9;
     background-repeat: no-repeat;
     background-size: cover;
-
-    h1 {
-      @include lg {
-        margin-top: 112px;
-      }
-    }
   }
   &-single-spec {
     height: 63vh;
@@ -103,7 +96,6 @@
     background-size: cover;
   }
   &-small {
-    
     height: 33vh;
     background: #f9f9f9;
     background-repeat: no-repeat;
@@ -111,7 +103,6 @@
 
     @include lg {
       margin-top: 112px;
-      
     }
   }
 }

@@ -98,6 +98,10 @@ add_action('widgets_init', function () {
         'name'          => __('CTA', 'sage'),
         'id'            => 'sidebar-cta'
     ] + $config);
+    register_sidebar([
+        'name'          => __('Blog', 'sage'),
+        'id'            => 'sidebar-blog'
+    ] + $config);
 });
 
 /**

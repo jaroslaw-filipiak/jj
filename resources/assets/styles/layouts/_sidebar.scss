@@ -1,0 +1,13 @@
+.jedruchniewicz-sidebar {
+  background-color: #f8f8f8;
+  -webkit-box-shadow: -5px 9px 6px -5px rgba(66, 68, 90, 0.51);
+  -moz-box-shadow: -5px 9px 6px -5px rgba(66, 68, 90, 0.51);
+  box-shadow: -5px 9px 6px -5px rgba(66, 68, 90, 0.51);
+
+  a {
+    color: #353f3e;
+    &:hover {
+      content: #51918b;
+    }
+  }
+}
