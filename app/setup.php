@@ -102,6 +102,10 @@ add_action('widgets_init', function () {
         'name'          => __('Blog', 'sage'),
         'id'            => 'sidebar-blog'
     ] + $config);
+    register_sidebar([
+        'name'          => __('Single Blog Post', 'sage'),
+        'id'            => 'sidebar-single-blog-post'
+    ] + $config);
 });
 
 /**
@@ -140,5 +144,5 @@ add_action('after_setup_theme', function () {
      */
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
-});
+    });
 });
