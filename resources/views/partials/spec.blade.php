@@ -3,7 +3,7 @@
 
         <div class="container">
             <div class="row">
-                <h3 class="font-serif display-6 h1 pb-4">Nasze specjalizacje</h3>
+                <h3 class="font-serif display-4 h1 pb-3">Nasze specjalizacje</h3>
             </div>
         </div>
 

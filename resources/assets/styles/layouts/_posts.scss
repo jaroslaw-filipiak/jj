@@ -1,0 +1,20 @@
+.bd-category-link {
+  &::before {
+    content: 'Kategorie:';
+    color: #999999;
+    font-size: 16px;
+  }
+}
+
+.bd-tags {
+  &::before {
+    content: 'Tagi:';
+    color: #999999;
+    font-size: 16px;
+  }
+}
+
+.bd-link-label,
+.bd-meta-datas {
+  display: none !important;
+}
